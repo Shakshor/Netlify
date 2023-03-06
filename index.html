@@ -13,17 +13,25 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
+    <style>
+      .list-item {
+        color: black;
+      }
+      .list-item:hover {
+        color: blue;
+        /* background-color: black; */
+      }
+    </style>
   </head>
   <body>
-    <h2>Navbar</h2>
-
     <!---------------- navbar ------------------->
 
     <section>
-      <div
-        class="d-flex justify-content-between align-items-center border border-primary px-3"
-      >
-        <a class="navbar-brand" href="#">Logo</a>
+      <div class="d-flex justify-content-between align-items-center px-3">
+        <a class="navbar-brand fs-2 fw-bold fst-italic" href="#"
+          >Power <span class="text-success"> Five</span></a
+        >
         <div
           class="d-flex justify-content-between align-items-center border border-secondary w-25"
         >
@@ -32,7 +40,7 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle px-3">
         <button
           class="navbar-toggler"
           type="button"
@@ -48,19 +56,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav w-100 justify-content-between">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Add Domain</a>
+              <a class="nav-link fs-5 list-item" href="#">Add Domain</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Deploy Subdomain</a>
+              <a class="nav-link fs-5 list-item" href="#">Deploy Subdomain</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Deploy Website</a>
+              <a class="nav-link fs-5 list-item" href="#">Deploy Website</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Domain Lists</a>
+              <a class="nav-link fs-5 list-item" href="#">Domain Lists</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="login.html">Logout</a>
+              <a class="nav-link fs-5 list-item" href="login.html">Logout</a>
             </li>
           </ul>
         </div>
