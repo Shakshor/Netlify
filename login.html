@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netlify</title>
+    <title>Login Page</title>
 
     <!------- bootstrap link -------->
     <link
@@ -15,8 +15,38 @@
     />
   </head>
   <body>
-    <section class="container">
-      <h2>Power Five</h2>
+    <section
+      class="container border border-primary w-50 d-flex justify-content-center align-items-center"
+    >
+      <div class="w-50">
+        <h2>Power Five</h2>
+
+        <!--------- input fields ------->
+
+        <!------ user name ----->
+        <div class="mb-3 w-100 border border-primary rounded-2">
+          <input
+            type="text"
+            class="form-control"
+            id=""
+            placeholder="user name"
+          />
+        </div>
+
+        <!------ password ----->
+        <div class="mb-3 w-100 border border-primary rounded-2">
+          <input
+            type="password"
+            class="form-control"
+            id=""
+            placeholder="password"
+          />
+        </div>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
     </section>
 
     <!--------- bootstrap js script  -->
