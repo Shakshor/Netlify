@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deploy Website</title>
+
+    <!------- bootstrap link -------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .btn-file {
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-file input[type="file"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        cursor: inherit;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      style="height: 100vh"
+      class="container-fluid w-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="w-50">
+        <h2 class="text-center mb-5">Upload Files & Deploy Your Domain</h2>
+
+        <!------------ input field -------------->
+        <select
+          class="form-select form-select-lg mb-3 border-2 border-primary rounded-0"
+          aria-label=".form-select-lg example"
+        >
+          <option selected>Select domain / Subdomain</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+
+        <!---------- button  -------->
+        <div class="text-center">
+          <span class="btn btn-lg btn-primary w-25 btn-file">
+            Upload<input type="file" />
+          </span>
+        </div>
+
+        <!------------ loader  ----------->
+        <div class="d-flex justify-content-center mt-5">
+          <div
+            class="spinner-grow pinner-border text-primary"
+            style="width: 3rem; height: 3rem"
+            role="status"
+          >
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------- bootstrap js script  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

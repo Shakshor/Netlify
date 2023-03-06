@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Add Domain</title>
 
     <!------- bootstrap link -------->
     <link
@@ -17,35 +17,36 @@
   <body>
     <section
       style="height: 100vh"
-      class="container border border-primary w-50 d-flex justify-content-center align-items-center"
+      class="container-fluid w-100 d-flex justify-content-center align-items-center"
     >
       <div class="w-50">
-        <h2>Power Five</h2>
+        <h2 class="text-center mb-5">Add a new domain</h2>
 
-        <!--------- input fields ------->
-
-        <!------ user name ----->
-        <div class="mb-3 w-100 border border-primary rounded-2">
+        <div class="input-group mb-3 input-group-lg border border-primary">
+          <button
+            class="btn btn-outline-primary rounded-0 dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Select
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
           <input
             type="text"
             class="form-control"
-            id=""
-            placeholder="user name"
+            aria-label="Text input with dropdown button"
           />
         </div>
 
-        <!------ password ----->
-        <div class="mb-3 w-100 border border-primary rounded-2">
-          <input
-            type="password"
-            class="form-control"
-            id=""
-            placeholder="password"
-          />
-        </div>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-primary">Login</button>
+        <div class="text-center">
+          <button type="button" class="btn btn-lg btn-primary w-25">
+            Create
+          </button>
         </div>
       </div>
     </section>
