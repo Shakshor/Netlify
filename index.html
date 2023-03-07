@@ -18,9 +18,10 @@
       .list-item {
         color: black;
       }
-      .list-item:hover {
-        color: blue;
-        /* background-color: black; */
+
+      .active {
+        background-color: rgb(210, 246, 210);
+        color: black;
       }
     </style>
   </head>
@@ -28,20 +29,22 @@
     <!---------------- navbar ------------------->
     <section>
       <div
-        class="d-flex justify-content-between align-items-center px-1 px-lg-4"
+        class="d-flex justify-content-between align-items-center px-1 px-lg-3"
       >
-        <a class="navbar-brand fs-3 fw-bold fst-italic" href="addDomain.html"
-          >Power <span class="text-success"> Five</span></a
-        >
+        <a class="navbar-brand" href="addDomain.html"
+          ><img class="w-50" src="/images/main-logo.png" alt=""
+        /></a>
         <div
-          class="d-flex justify-content-between align-items-center border border-secondary w-25 w-50"
+          class="d-flex justify-content-between align-items-center border border-success-subtle w-25 px-1 mt-auto"
         >
-          <span class="">Server IP:</span>
-          <button type="button" class="btn btn-sm btn-primary">copy</button>
+          <span class="fs-5">Server IP:</span>
+          <button type="button" class="btn btn-sm">
+            <img src="/images/copy.png" alt="" />
+          </button>
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -56,29 +59,39 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between"
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-evenly"
             >
-              <li class="nav-item active">
+              <li
+                class="nav-item active border border-success-subtle w-25 text-center"
+              >
                 <a class="nav-link fs-5 list-item" href="addDomain.html"
                   >Add Domain</a
                 >
               </li>
-              <li class="nav-item">
+              <li
+                class="nav-item border border-success-subtle w-25 text-center"
+              >
                 <a class="nav-link fs-5 list-item" href="deploySubdomain.html"
                   >Deploy Subdomain</a
                 >
               </li>
-              <li class="nav-item">
+              <li
+                class="nav-item border border-success-subtle w-25 text-center"
+              >
                 <a class="nav-link fs-5 list-item" href="deployWebsite.html"
                   >Deploy Website</a
                 >
               </li>
-              <li class="nav-item">
+              <li
+                class="nav-item border border-success-subtle w-25 text-center"
+              >
                 <a class="nav-link fs-5 list-item" href="domainLists.html"
                   >Domain Lists</a
                 >
               </li>
-              <li class="nav-item">
+              <li
+                class="nav-item border border-success-subtle w-25 text-center"
+              >
                 <a class="nav-link fs-5 list-item" href="login.html">Logout</a>
               </li>
             </ul>
