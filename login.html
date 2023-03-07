@@ -13,39 +13,53 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
+    <!-------- custom css ---------->
   </head>
   <body>
     <section
-      style="height: 100vh"
-      class="container border border-primary w-50 d-flex justify-content-center align-items-center"
+      class="vh-100 d-flex text-center justify-content-center align-items-center border border-secondary"
     >
-      <div class="w-50">
-        <h2>Power Five</h2>
+      <!-- 2nd -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-4">
+            <!------- logo -------->
+            <a class="navbar-brand fs-1 fw-bold" href="#"
+              >Power <span class="text-success"> Five</span></a
+            >
 
-        <!--------- input fields ------->
+            <form>
+              <!--------- user name field ------->
+              <div class="mb-3 border border-primary mt-3 rounded-2">
+                <input
+                  type="text"
+                  class="form-control fs-5"
+                  id=""
+                  placeholder="Username"
+                />
+              </div>
 
-        <!------ user name ----->
-        <div class="mb-3 w-100 border border-primary rounded-2">
-          <input
-            type="text"
-            class="form-control"
-            id=""
-            placeholder="user name"
-          />
-        </div>
+              <!-- ---- password --- -->
+              <div class="mb-3 border border-primary rounded-2">
+                <input
+                  type="Password"
+                  class="form-control fs-5"
+                  id=""
+                  placeholder="Password"
+                />
+              </div>
 
-        <!------ password ----->
-        <div class="mb-3 w-100 border border-primary rounded-2">
-          <input
-            type="password"
-            class="form-control"
-            id=""
-            placeholder="password"
-          />
-        </div>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-primary">Login</button>
+              <div class="text-end">
+                <button
+                  type="submit"
+                  class="btn btn-primary mt-1 w-25 rounded-3"
+                >
+                  Login
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
