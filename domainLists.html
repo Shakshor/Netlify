@@ -13,6 +13,24 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
+    <!------------ main style ------>
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <!------- inline style ------->
+    <style>
+      table {
+        border: 3px solid #eeeeee;
+      }
+
+      table tr {
+        border: 2px dotted #eeeeee;
+      }
+
+      .table-footer td {
+        border-top: 2px solid #eeeeee;
+      }
+    </style>
   </head>
   <body>
     <!---------------- navbar ------------------->
@@ -80,7 +98,7 @@
     <!------------ navbar end ---------->
 
     <!-------- deploy list page here --------->
-    <section class="container-fluid">
+    <section class="container mt-5">
       <div class="row">
         <table class="table table-hover">
           <thead class="bg-primary-subtle">
@@ -88,7 +106,7 @@
               <th scope="col">Lists</th>
               <th scope="col">Domain Name</th>
               <th scope="col">Status</th>
-              <th scope="col">Delete</th>
+              <th class="text-end" scope="col">Delete</th>
             </tr>
           </thead>
           <tbody>
@@ -96,9 +114,9 @@
               <th scope="row">1</th>
               <td>Mark</td>
               <td>Otto</td>
-              <td>
-                <button type="button" class="btn btn-sm btn-danger">
-                  Delete
+              <td class="text-end">
+                <button type="button" class="btn btn-sm">
+                  <img src="images/delete.png" alt="" />
                 </button>
               </td>
             </tr>
@@ -106,9 +124,9 @@
               <th scope="row">2</th>
               <td>Jacob</td>
               <td>Thornton</td>
-              <td>
-                <button type="button" class="btn btn-sm btn-danger">
-                  Delete
+              <td class="text-end">
+                <button type="button" class="btn btn-sm">
+                  <img src="images/delete.png" alt="" />
                 </button>
               </td>
             </tr>
@@ -117,10 +135,17 @@
               <!-- <td colspan="2">Larry the Bird</td> -->
               <td>Larry the Bird</td>
               <td>Ok</td>
-              <td>
-                <button type="button" class="btn btn-sm btn-danger">
-                  Delete
+              <td class="text-end">
+                <button type="button" class="btn btn-sm">
+                  <img src="images/delete.png" alt="" />
                 </button>
+              </td>
+            </tr>
+
+            <tr class="table-footer">
+              <td colspan="2">Number of Domain:</td>
+              <td class="text-center" colspan="2">
+                Number of Deployed Domain:
               </td>
             </tr>
           </tbody>
