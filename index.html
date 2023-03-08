@@ -14,6 +14,9 @@
       rel="stylesheet"
     />
 
+    <!------------ main style ------>
+    <link rel="stylesheet" href="/styles/main.css" />
+
     <!------- bootstrap link -------->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -21,54 +24,11 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-
-    <style>
-      .list-item {
-        color: black;
-      }
-
-      .active {
-        background-color: rgb(210, 246, 210);
-        color: black;
-      }
-
-      /*---------- responsive -------------  */
-      /* ------ mobile ----------- */
-      @media only screen and (max-width: 768px) {
-        .main-logo {
-          width: 45%;
-        }
-
-        .server-details h6 {
-          margin-right: 48px;
-        }
-
-        .server-details img {
-          width: 15px;
-          height: 15px;
-          margin-bottom: 5px;
-        }
-
-        nav {
-          background-color: #eeeeee;
-        }
-
-        ul li a {
-          max-width: 100%;
-        }
-      }
-
-      /*-------- desktop ----------  */
-      @media only screen and (min-width: 769px) {
-        ul li {
-          width: 25%;
-        }
-      }
-    </style>
   </head>
   <body>
     <!---------------- navbar ------------------->
     <section>
+      <!----------- header part-1 ------->
       <div
         class="d-flex justify-content-between align-items-center px-1 px-lg-3"
       >
@@ -92,25 +52,7 @@
         </div>
       </div>
 
-      <!-- <div
-          class="d-flex justify-content-between align-items-center px-1 px-lg-3"
-        >
-          <div>
-            <a class="navbar-brand" href="addDomain.html"
-              ><img class="img-fluid" src="/images/main-logo.png" alt="logo"
-            /></a>
-          </div>
-
-          <div
-            class="col-sm-8 d-flex justify-content-between align-items-center border border-success-subtle w-25 px-lg-1 mt-auto"
-          >
-            <span class="fs-5">Server IP:</span>
-            <button type="button" class="btn btn-sm">
-              <img class="" src="/images/copy.png" alt="copy" />
-            </button>
-          </div>
-        </div> -->
-
+      <!----------- header part-2  ----------->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button
@@ -158,7 +100,6 @@
         </div>
       </nav>
     </section>
-
     <!------------ navbar end ---------->
 
     <!--------- bootstrap js script  -->

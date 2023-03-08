@@ -22,8 +22,11 @@
       crossorigin="anonymous"
     />
 
+    <!------------ main style ------>
+    <link rel="stylesheet" href="/styles/main.css" />
+
     <style>
-      .domain-title {
+      .content-header {
         font-family: "Caveat", cursive;
       }
     </style>
@@ -31,24 +34,35 @@
   <body>
     <!---------------- navbar ------------------->
     <section>
+      <!----------- header part-1 ------->
       <div
-        class="d-flex justify-content-between align-items-center px-1 px-lg-4"
+        class="d-flex justify-content-between align-items-center px-1 px-lg-3"
       >
-        <a class="navbar-brand fs-3 fw-bold fst-italic" href="addDomain.html"
-          >Power <span class="text-success"> Five</span></a
-        >
+        <div class="main-logo col-md-3">
+          <a class="navbar-brand" href="addDomain.html"
+            ><img class="img-fluid" src="/images/main-logo.png" alt="logo"
+          /></a>
+        </div>
+
         <div
-          class="d-flex justify-content-between align-items-center border border-secondary w-25 w-50"
+          class="server-ip-address col-md-4 border border-success-subtle px-1 px-lg-1 mt-auto"
         >
-          <span class="">Server IP:</span>
-          <button type="button" class="btn btn-sm btn-primary">copy</button>
+          <div
+            class="server-details d-flex justify-content-between align-items-center"
+          >
+            <h6 class="fw-semibold">Server Ip:</h6>
+            <button type="button" class="btn btn-sm">
+              <img src="/images/copy.png" alt="copy" />
+            </button>
+          </div>
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+      <!----------- header part-2  ----------->
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button
-            class="navbar-toggler"
+            class="navbar-toggler mb-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo02"
@@ -60,29 +74,31 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between"
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-evenly"
             >
-              <li class="nav-item active">
+              <li
+                class="nav-item active border border-success-subtle text-center"
+              >
                 <a class="nav-link fs-5 list-item" href="addDomain.html"
                   >Add Domain</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item border border-success-subtle text-center">
                 <a class="nav-link fs-5 list-item" href="deploySubdomain.html"
                   >Deploy Subdomain</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item border border-success-subtle text-center">
                 <a class="nav-link fs-5 list-item" href="deployWebsite.html"
                   >Deploy Website</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item border border-success-subtle text-center">
                 <a class="nav-link fs-5 list-item" href="domainLists.html"
                   >Domain Lists</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item border border-success-subtle text-center">
                 <a class="nav-link fs-5 list-item" href="login.html">Logout</a>
               </li>
             </ul>
@@ -90,7 +106,6 @@
         </div>
       </nav>
     </section>
-
     <!------------ navbar end ---------->
 
     <!---------- add domain page ---------->
@@ -98,7 +113,7 @@
       class="container w-100 d-flex justify-content-center align-items-center mt-5"
     >
       <div class="row justify-content-center">
-        <h2 class="text-center mb-5 domain-title">Add a new domain</h2>
+        <h2 class="text-center mb-5 content-header">Add a new domain</h2>
 
         <div class="input-group mb-3 input-group-lg">
           <button
@@ -111,7 +126,7 @@
           </button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><hr class="dropdown-divider" /></li>
+            <hr />
             <li><a class="dropdown-item" href="#">Separated link</a></li>
           </ul>
           <input
