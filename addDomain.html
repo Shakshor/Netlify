@@ -48,15 +48,25 @@
         </div>
 
         <div
-          class="server-ip-address col-md-4 border border-success-subtle px-1 px-lg-1 mt-auto"
+          class="server-ip-address col-md-4 border border-success-subtle px-1 px-lg-1 mt-lg-auto"
         >
           <div
             class="server-details d-flex justify-content-between align-items-center"
           >
-            <h6 class="fw-semibold">Server Ip:</h6>
-            <button type="button" class="btn btn-sm">
+            <!---------- serverId   --------->
+            <h6 class="fw-semibold mt-lg-2">
+              Server Ip: <span id="serverId"> 123456 </span>
+            </h6>
+            <!-------- copy button ------>
+
+            <button id="copyBtn" type="button" class="btn btn-sm mt-lg-1">
               <img src="/images/copy.png" alt="copy" />
             </button>
+
+            <!------ display message ------>
+            <div id="displayMessage">
+              <p class="text-success fw-bold">copied</p>
+            </div>
           </div>
         </div>
       </div>
@@ -151,5 +161,8 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <!--------- js file ---------->
+    <script src="js/copyToClipboard.js"></script>
   </body>
 </html>

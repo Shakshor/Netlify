@@ -9,6 +9,10 @@ body {
   color: black;
 }
 
+.list-item:hover {
+  background-color: bisque;
+}
+
 .active {
   background-color: rgb(210, 246, 210);
   color: black;
