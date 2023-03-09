@@ -119,19 +119,19 @@
         <h2 class="text-center mb-5 content-header">Add a new domain</h2>
 
         <div class="input-group mb-3 input-group-lg">
-          <button
-            class="btn btn-outline-primary rounded-0 dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Select
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <hr />
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
+          <!------- dropdown --------->
+
+          <div class="input-group-lg">
+            <select
+              class="form-select border border-primary rounded-0 text-primary input-group-lg"
+              aria-label="Default select example"
+            >
+              <option selected>Select</option>
+              <option value="1">HTTP</option>
+              <option value="2">HTTPS</option>
+            </select>
+          </div>
+
           <input
             type="text"
             class="form-control border border-primary rounded-0"
