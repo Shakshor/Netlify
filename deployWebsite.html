@@ -29,25 +29,13 @@
     <link rel="stylesheet" href="/styles/main.css" />
 
     <style>
-      .btn-file {
-        position: relative;
-        overflow: hidden;
+      input::file-selector-button {
+        background-color: #0074d9;
+        color: white;
+        border: 0;
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
       }
-      .btn-file input[type="file"] {
-        position: absolute;
-        top: 0;
-        right: 0;
-        min-width: 100%;
-        min-height: 100%;
-        font-size: 100px;
-        text-align: right;
-        filter: alpha(opacity=0);
-        opacity: 0;
-        outline: none;
-        cursor: inherit;
-        display: block;
-      }
-
       .content-header {
         font-family: "Caveat", cursive;
       }
@@ -151,10 +139,21 @@
         </select>
 
         <!---------- button  -------->
-        <div class="text-center">
+        <!-- <div class="text-center">
           <span class="btn btn-primary w-25 btn-file">
             Upload<input type="file" />
           </span>
+        </div> -->
+
+        <!---------- button  -------->
+
+        <div class="d-flex justify-content-between">
+          <div>
+            <input type="file" name="zip_file" />
+          </div>
+          <button type="submit" class="btn btn-primary w-25" name="upload_btn">
+            Upload
+          </button>
         </div>
 
         <!------------ loader  ----------->
