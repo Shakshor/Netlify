@@ -39,6 +39,11 @@
       .content-header {
         font-family: "Caveat", cursive;
       }
+      /*--------- drag and drop --------- */
+      .drag-area.upper {
+        border: 5px dashed #fff;
+        background-color: aqua;
+      }
     </style>
   </head>
   <body>
@@ -143,20 +148,42 @@
         </div>
 
         <!---------- button  -------->
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-8">
+
+        <!-- <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
             <div class="d-flex justify-content-between">
               <div class="">
                 <input type="file" name="zip_file" />
-              </div>
-
+              </div> 
               <button
-                type="submit"
-                class="btn btn-primary w-25"
-                name="upload_btn"
+              type="submit"
+              class="btn btn-primary w-25"
+              name="upload_btn"
+            >
+              Upload
+            </button>
+          </div>
+        </div> -->
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8">
+            <div class="d-flex justify-content-between">
+              <!-------- drag and drop area  -->
+              <div id="drag-area" class="border border-primary p-5">
+                <div class="d-flex flex-column justify-content-center">
+                  <h5>Drag & Dop To Upload File</h5>
+                  <p>or</p>
+                  <input type="file" name="zip_file" />
+                </div>
+              </div>
+              <!----------- upload area -------->
+              <div
+                class="d-flex justify-content-center align-items-center w-25"
               >
-                Upload
-              </button>
+                <button type="submit" class="btn btn-primary" name="upload_btn">
+                  Upload
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -180,5 +207,22 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // selecting drag area
+      const dropArea = document.getElementById("drag-area");
+
+      // drop file over dragArea
+      dropArea.addEventListener("dragover", function () {
+        console.log("File is over DragArea");
+        dropArea.classList.add("upper");
+      });
+
+      // leave file from dragArea
+      dropArea.addEventListener("dragleave", function () {
+        console.log("File is outside of DragArea");
+        dropArea.classList.remove("upper");
+      });
+    </script>
   </body>
 </html>
